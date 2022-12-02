@@ -4,7 +4,7 @@ LABEL Description="mqtt healthcheck image"
 
 COPY * /usr/bin/
 
-RUN chmod +x /usr/bin/mqtt-healthcheck.py
+RUN chmod +x /usr/bin/mqtt_healthcheck.py
 
 ENTRYPOINT ["python3", "-u", "/usr/bin/mqtt_healthcheck.py"]
 
